@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Instagram Sosed",
+  "description": "This is Instagram Sosed extension",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "https://www.instagram.com/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "icons": {
+    "16": "instagramSosed.png",
+    "48": "instagramSosed.png",
+    "128": "instagramSosed.png"
+  }
+}
